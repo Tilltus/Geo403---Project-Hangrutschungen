@@ -1,0 +1,30 @@
+Hangrutschungs-Anfälligkeitsmodel
+Dokumentation des automatisierten QGIS Model Designer Workflows
+
+Nötigen Vektor & Raster Inputs (+Originalnamen)
+Alle auf CRS [EPSG: 32648] geeint und im Ordner "Hangrutschungsdata" zu finden
+Raster:
+- DEM raster (full_dgmq3)
+--> daraus entstehende Raster: Slope-, Aspect Raster
+- Landcover Raster (VGTB_LandCover_2010_v2)
+- Soil Raster (soil1)
+- Lithology Raster (litho1)
+- Water Raster (Waterriver_u)
+Vektor:
+- Road Vektor --> Entstehung Straßenentfernungsraster
+- Landslide inventory --> all_slides_point & all_slides(Polygon)
+
+- Zwischenschritte:
+- Reprojection aller Raster in EPSG:32648
+--> Angleich aller Raster für Pixelgröße & Rasterextend
+- Fill NoData zur Korrektur fehlender Rasterbereiche
+- Indexgewichte & validation statistics für Hybriden Workflow als Tabelle ausgeben Lassen und In Excel Teballen und Gewichte berechnen
+
+Outputs:
+- susceptibility raster SI
+- susceptibility raster FR
+--> factor weights (Statistical Index(SI) / Frequency Ratio(FR))
+--> 2 Hangrutschungs Susceptibility Indexe
+
+Geschätzte Prozessdauer:
+7 bis 8 Minuten
