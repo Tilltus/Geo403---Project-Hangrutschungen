@@ -7,14 +7,14 @@ Das hier vorgestellte Modell ermöglicht es nach Eingabe der erforderlichen Para
 
 Die für die Berechnung verwendeten Parameter setzen sich aus folgenden zusammen:
 
-DGM
-Slope
-Aspect
-Distance to Roads
-Distance to River
-Landuse
-Lithologie
-Soil
+DGM;
+Slope;
+Aspect;
+Distance to Roads;
+Distance to River;
+Landuse;
+Lithologie;
+Soil.
 
 ein Workflow des auszuführenden Model Designers ist angehängt in einer Textdatei
 
